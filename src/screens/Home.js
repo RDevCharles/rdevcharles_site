@@ -2,20 +2,16 @@ import React from "react";
 import "../App.css";
 import HeaderImage from "../assets/images/dev.jpg";
 import InfoCard from "../components/InfoCard";
-import PrevWorkCard from "../components/PrevWorkCard";
 import TechnologiesCards from "../components/TechnologiesCards";
 import Form from "../components/Form";
 import ReactLogo from "../assets/icons/logo512.png";
 import FirebaseLogo from "../assets/icons/fb-logo-standard.png";
 import Mongo from "../assets/icons/MongoDB_Logo.png";
 import Node from "../assets/icons/nodejs.png";
-import Blk from "../assets/images/blkbus.jpg";
-import WhatsLegal from "../assets/images/app_store_pic.jpg";
 import WordPress from "../assets/icons/WordPress.png";
 import Tele from "../assets/images/tele.jpg";
 import Coder from "../assets/images/code-env.jpg";
 import Office from "../assets/images/office.jpg";
-
 
 const Home = () => {
   return (
@@ -37,7 +33,6 @@ const Home = () => {
       </div>
 
       <div id="about" style={styles.cardContainer}>
-       
         <InfoCard
           initialImg={Tele}
           coverSrc={Tele}
@@ -81,7 +76,7 @@ const Home = () => {
                 zIndex: 2,
                 color: "white",
                 top: 40,
-                left: "2rem",
+                left: "2rem"
               }}
               className={"someH3"}
             >
@@ -96,9 +91,7 @@ const Home = () => {
                 left: "1.8rem",
                 textAlign: "left"
               }}
-              
             >
-              
               A blogging app designed to educate people on topics such as tech
               and cyber security. Download from the app store and give it a try.
             </p>
@@ -117,7 +110,6 @@ const Home = () => {
                 textAlign: "left"
               }}
               className={"someH3"}
-
             >
               Sable Vue
             </h3>
@@ -140,7 +132,6 @@ const Home = () => {
           </div>
         </a>
       </div>
-      
 
       <div style={styles.cardContainer}>
         <TechnologiesCards src={ReactLogo} />
@@ -197,8 +188,8 @@ const styles = {
     justifyContent: "center",
     margin: 0,
     backgroundColor: "white",
-    position: "relative",
-      }
+    position: "relative"
+  }
 };
 
 export default Home;

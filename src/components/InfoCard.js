@@ -24,9 +24,9 @@ const [showImage, setShowImge] = React.useState("noInfoCardType")
           alt={props.alt}
         />
         <img className={`${showImage}`} style={{  position: "absolute", width: "18rem",
-    height: "60vh", borderRadius: "10px"}} src={props.initialImg}/>
+    height: "60vh", borderRadius: "10px "}} src={props.initialImg}/>
 
-        <h3 className={`${showImage}`} style={{color:"white", zIndex:2, width:'20rem', position:'relative', top:'.9rem'}}>{props.cardTitle}</h3>
+        <h4 className={`${showImage}`} style={{color:"white", zIndex:2, width:'20rem', position:'relative', top:'.8rem'}}>{props.cardTitle}</h4>
 
         <p className={`${showImage}`} style={styles.cardSummary}>
           {props.cardSummary}

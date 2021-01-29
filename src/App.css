@@ -200,19 +200,17 @@ opacity: 0.3;
 }
 
 @media screen and (max-width: 627px){
-  .home .entry-content p img, .home .entry-content .vas1 img {
-    width: 50%;
-}
 
 
 
 p{
   padding: 10rem;
-  text-align: center;
+
 }
 
 h3{
   padding:10rem;
+ 
 }
 
 }

@@ -4,7 +4,6 @@ const TechnologiesCards = props => {
     return (
         <div style={styles.cardContainer}>
             <div style={styles.cardStyle}>
-              <h3>{props.cardTitle}</h3>
               <img style={styles.imgStyle} src={props.src} alt={props.alt} />
       </div>
         </div>
