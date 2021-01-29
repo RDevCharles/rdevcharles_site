@@ -1,0 +1,218 @@
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+} 
+
+#about{
+  background-color:whitesmoke;
+}
+
+#work:hover{
+  background-position: center;
+  background-size: cover;
+  transition: transform ease 0.3s;
+}
+
+.info-color:hover {
+  transition: ease-in-out 500ms;
+  opacity: 1;
+}
+
+.info-color:hover {
+  transition: ease-in-out 1300ms;
+  background-color: #0a1b13;
+  color: white;
+  background-size: cover;
+}
+
+
+
+.fadeImg {
+  background-color: "white";
+    text-align: "center";
+    border-width: "1px";
+    width: "18rem";
+    height: "60vh";
+    z-index: "-2";
+    border-radius: "10px";
+    position: "absolute";
+    background-position: '50% top';
+    background-repeat: 'no-repeat';
+    background-attachment: 'scroll';
+    background-size: '70% auto';
+}
+
+.fadeImg:hover {
+ transition: ease-in-out 500ms;
+ opacity: 0;
+ background-color: "white";
+ text-align: "center";
+ border-width: "1px";
+ width: "18rem";
+ height: "60vh";
+ z-index: "-2";
+ border-radius: "10px";
+ position: "absolute";
+ background-position: '50% top';
+ background-repeat: 'no-repeat';
+ background-attachment: 'scroll';
+ background-size: '70% auto';
+}
+.zoomOut {
+  width: 40rem; 
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+.zoomIn {
+  width: auto;
+  height: 100%;
+  background-image: url("./assets/images/app_store_pic.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: transform ease 0.3s;
+  opacity: .4;
+ 
+}
+.zoomIn:hover {
+  transform: scale(1.2);
+}
+
+.zoomOutB {
+  width: 40rem; 
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+.zoomInB {
+  width: auto;
+  height: 100%;
+  background-image: url("./assets/images/blkbus.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: transform ease 0.3s;
+  opacity: .4;
+}
+.zoomInB:hover {
+  transform: scale(1.2);
+}
+
+
+.noInit{
+  
+  transition: ease-in-out 300ms;
+  border-radius:"3rem";
+
+  
+}
+
+.initPic{
+transition: ease-in-out 500ms;
+opacity: 1;
+background-color: "#41b883C4";
+
+}
+
+.initPic:hover{
+opacity: 1;
+
+}
+
+.noInfoCardType{
+  display: flex;
+opacity: 0;
+background-color: "#41b883C4";
+justify-content: center;
+
+}
+
+.infoCardType {
+
+  opacity: 0;
+  
+  
+}
+
+.infoCardType:hover{
+  opacity: 1;
+  
+}
+
+
+
+.bgImg:hover {
+  opacity: 0.3;
+  transition: ease-in-out 300ms;
+  background-color: #41b883;
+}
+.prevCardImage {
+opacity: 0.3;
+
+  transition: ease-in-out 500ms;
+} 
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.form-links {
+  text-decoration: none;
+  color: black;
+  lighting-color: black;
+  font-size: 16px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+
+
+
+ @media (prefers-reduced-motion: no-preference) {
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .formTopType{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 627px){
+  .home .entry-content p img, .home .entry-content .vas1 img {
+    width: 50%;
+}
+
+
+
+p{
+  padding: 10rem;
+  text-align: center;
+}
+
+h3{
+  padding:10rem;
+}
+
+}
