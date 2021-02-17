@@ -7,6 +7,27 @@ a:hover {
   color: rgb(0, 0, 0);
 } 
 
+.popUpContainer{
+  width: 12rem;
+  height: 3rem;
+  border-radius: 10px;
+  align-self:center;
+  background-color: #23d61277;
+  transition: ease 0.3s;
+ 
+}
+
+.noPopUpContainer{
+  width: 12rem;
+  height: 3rem;
+  border-radius: 10px;
+  align-self:center;
+  background-color: #23d61277;
+  opacity: 0;
+  transition: ease 0.3s;
+ 
+}
+
 #about{
   background-color:whitesmoke;
 }
@@ -73,7 +94,7 @@ a:hover {
 .zoomIn {
   width: auto;
   height: 100%;
-  background-image: url("./assets/images/app_store_pic.jpg");
+  background-image: url("./assets/images/studio-pic.jpg");
   background-position: center;
   background-size: cover;
   transition: transform ease 0.3s;

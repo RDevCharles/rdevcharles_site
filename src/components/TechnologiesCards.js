@@ -27,10 +27,10 @@ const styles = {
     alignItems: "center",
     textAlign: "center",
     borderWidth: "1px",
-    width: "12rem",
+    width: "16rem",
     height: "30vh",
     boxShadow: "0px 1px 5px 1px grey",
-    margin: "4rem 1rem",
+    margin: "3rem 1rem 0rem 1rem",
     
     borderRadius: "10px"
     },

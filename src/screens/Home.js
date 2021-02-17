@@ -9,11 +9,15 @@ import FirebaseLogo from "../assets/icons/fb-logo-standard.png";
 import Mongo from "../assets/icons/MongoDB_Logo.png";
 import Node from "../assets/icons/nodejs.png";
 import WordPress from "../assets/icons/WordPress.png";
+import Wix from "../assets/icons/wix black.png";
 import Tele from "../assets/images/tele.jpg";
 import Coder from "../assets/images/code-env.jpg";
 import Office from "../assets/images/office.jpg";
+import PopUp from "../components/PopUp";
 
 const Home = () => {
+
+  const [onPopUp, setOnPopUp] = React.useState("popUpContainer") 
   return (
     <div
       style={{
@@ -23,16 +27,23 @@ const Home = () => {
         position: "relative"
       }}
     >
+      
       <div style={styles.mainContainer}>
         <img
           style={styles.headerImage}
           src={HeaderImage}
           alt={"header picture"}
         />
+        
         <div style={styles.mainWrapper}></div>
       </div>
+      
+      <h1 style={{ margin: '4rem 0rem 0rem 0rem' }}>About</h1>
+      <PopUp newClassName={`${onPopUp}`}/>
 
-      <div id="about" style={styles.cardContainer}>
+      <div onMouseMove={() => {
+        setOnPopUp("noPopUpContainer")
+      }} id="about" style={styles.cardContainer}>
         <InfoCard
           initialImg={Tele}
           coverSrc={Tele}
@@ -68,7 +79,7 @@ const Home = () => {
           flexWrap: "wrap"
         }}
       >
-        <a href="https://apps.apple.com/us/app/whatslegal/id1543793062">
+        <a href="https://xenodochial-meitner-1d895a.netlify.app/">
           <div className={"zoomOut"}>
             <h3
               style={{
@@ -80,7 +91,7 @@ const Home = () => {
               }}
               className={"someH3"}
             >
-              WhatsLegal
+              Record Site
             </h3>
             <p
               style={{
@@ -92,8 +103,7 @@ const Home = () => {
                 textAlign: "left"
               }}
             >
-              A blogging app designed to educate people on topics such as tech
-              and cyber security. Download from the app store and give it a try.
+              An open source website designed for record producers and recording studio owners who want a nicely designed website free of charge.
             </p>
             <div className={"zoomIn"}></div>
           </div>
@@ -132,13 +142,17 @@ const Home = () => {
           </div>
         </a>
       </div>
-
+<h1 style={{margin:'4rem 0rem 0rem 0rem'}}>Technologies</h1>
       <div style={styles.cardContainer}>
         <TechnologiesCards src={ReactLogo} />
-        <TechnologiesCards src={WordPress} />
-        <TechnologiesCards src={Mongo} />
-        <TechnologiesCards src={FirebaseLogo} />
         <TechnologiesCards src={Node} />
+        <TechnologiesCards src={Wix} />
+        <TechnologiesCards src={WordPress} />
+      
+      
+        <TechnologiesCards src={FirebaseLogo} />
+        <TechnologiesCards src={Mongo} />
+        
       </div>
 
       <Form />
