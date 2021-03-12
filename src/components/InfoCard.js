@@ -6,9 +6,6 @@ import "aos/dist/aos.css";
 const InfoCard = props => {
 const [showImage, setShowImge] = React.useState("noInfoCardType")
 
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
 
   return (
     <div onMouseEnter={() => {

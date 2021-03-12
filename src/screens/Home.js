@@ -14,12 +14,21 @@ import Tele from "../assets/images/tele.jpg";
 import Coder from "../assets/images/code-env.jpg";
 import Office from "../assets/images/office.jpg";
 import PopUp from "../components/PopUp";
+import SVG1 from "../assets/images/pixeltrue-support.svg";
+import aos from 'aos';
+import IntroTestimonials from "../components/IntroTestimonials";
 
 const Home = () => {
 
-  const [onPopUp, setOnPopUp] = React.useState("popUpContainer") 
+  const [onPopUp, setOnPopUp] = React.useState("popUpContainer")
+  // allow set interval to take array index as parameter to iterate
+  
+
+  
+
   return (
     <div
+   
       style={{
         display: "flex",
         justifyContent: "center",
@@ -34,7 +43,13 @@ const Home = () => {
           src={HeaderImage}
           alt={"header picture"}
         />
+     
+        <IntroTestimonials /> 
         
+        <img style={{width:'90rem', height:'40rem', position:'absolute', right:0, }}src={SVG1}/>
+
+        
+       
         <div style={styles.mainWrapper}></div>
       </div>
       
@@ -182,7 +197,8 @@ const styles = {
   headerImage: {
     maxWidth: "320px",
     margin: "8rem 0rem 4rem 0rem",
-    borderRadius: 250
+    borderRadius: 250,
+    zIndex:2
   },
   imgStyle: {
     width: "100vw",
