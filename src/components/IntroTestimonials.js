@@ -17,8 +17,8 @@ const IntroTestimonials = props => {
           data-aos-duration="2000" 
           
           style={{
-              width: '18rem', height:'18rem', position: 'absolute', left: '30%', top: '7%',
-          backgroundColor:'black', borderRadius:'9rem', display:'flex', alignItems:'center'
+              width: '18rem', height:'18rem', position: 'absolute', left: '30%', top: '14rem',
+          backgroundColor:'black', borderRadius:'9rem', 
             }}>
           
               
@@ -32,8 +32,8 @@ const IntroTestimonials = props => {
           data-aos-duration="2000"
           data-aos-anchor-placement="top-bottom"
          style={{
-           width: '18rem', height:'18rem', position: 'absolute', right: '30%', top: '7%',
-           backgroundColor:'#41b883', borderRadius:'9rem',display:'flex', alignItems:'center'
+           width: '18rem', height:'18rem', position: 'absolute', right: '30%', top: '14rem',
+           backgroundColor:'#41b883', borderRadius:'9rem',
         }}>
 
          

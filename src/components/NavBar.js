@@ -46,6 +46,14 @@ const NavBar = () => {
               <NavDropdown.Item href="https://github.com/RDevCharles/VanillaJSOnlineSchool">
                 Online School
               </NavDropdown.Item>
+              <NavDropdown.Item href="https://github.com/RDevCharles/blogApp">
+                Blogging Ios App
+              </NavDropdown.Item>
+              
+              <NavDropdown.Item href="https://github.com/RDevCharles/recording_studio_template">
+                Music Creator Website
+              </NavDropdown.Item>
+
             </NavDropdown>
 
             <Link

@@ -10,7 +10,7 @@ const PopUp = (props) => {
         <div 
 
          className={props.newClassName}  >
-            <p style={{color:'white', marginTop:'10px'}}>Hover over each image</p>
+            <h5 style={{color:'#41b883'}}>Hover over each image</h5>
     </div>
 )
 }

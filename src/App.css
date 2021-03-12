@@ -8,21 +8,17 @@ a:hover {
 } 
 
 .popUpContainer{
-  width: 12rem;
+  width: 16rem;
   height: 3rem;
-  border-radius: 10px;
   align-self:center;
-  background-color: #23d61277;
   transition: ease 0.3s;
  
 }
 
 .noPopUpContainer{
-  width: 12rem;
+  width: 16rem;
   height: 3rem;
-  border-radius: 10px;
   align-self:center;
-  background-color: #23d61277;
   opacity: 0;
   transition: ease 0.3s;
  
