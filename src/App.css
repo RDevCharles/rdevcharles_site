@@ -1,11 +1,26 @@
 .App {
   text-align: center;
   overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a:hover {
   color: rgb(0, 0, 0);
 } 
+
+h4{
+  font-weight: normal;
+  color: #41b883;
+}
+
+ul{
+  padding:0
+}
+
+li{
+list-style: none;
+margin:1rem 6rem
+}
 
 .popUpContainer{
   width: 16rem;
@@ -34,79 +49,6 @@ opacity: 1;
 transition: ease 0.3s;
 }
 
-#space-invader {
-  box-shadow: 0 0 0 1em black,
-  0 1em 0 1em black,
-  -2.5em 1.5em 0 .5em black,
-  2.5em 1.5em 0 .5em black,
-  -3em -3em 0 0 black,
-  3em -3em 0 0 black,
-  -2em -2em 0 0 black,
-  2em -2em 0 0 black,
-  -3em -1em 0 0 black,
-  -2em -1em 0 0 black,
-  2em -1em 0 0 black,
-  3em -1em 0 0 black,
-  -4em 0 0 0 black,
-  -3em 0 0 0 black,
-  3em 0 0 0 black,
-  4em 0 0 0 black,
-  -5em 1em 0 0 black,
-  -4em 1em 0 0 black,
-  4em 1em 0 0 black,
-  5em 1em 0 0 black,
-  -5em 2em 0 0 black,
-  5em 2em 0 0 black,
-  -3em 3em 0 0 black,
-  3em 3em 0 0 black,
-  5em 3em 0 0 black,
-  -2em 4em 0 0 black,
-  -1em 4em 0 0 black,
-  1em 4em 0 0 black,
-  2em 4em 0 0 black;
-  background: black;
-  width: 1em;
-  height: 1em;
-  overflow: hidden;
-  margin: 50px 0 70px 65px;
-}
-
-#space-invader-green {
-  box-shadow: 0 0 0 1em #41b883,
-  0 1em 0 1em #41b883,
-  -2.5em 1.5em 0 .5em #41b883,
-  2.5em 1.5em 0 .5em#41b883,
-  -3em -3em 0 0 #41b883,
-  3em -3em 0 0 #41b883,
-  -2em -2em 0 0 #41b883,
-  2em -2em 0 0 #41b883,
-  -3em -1em 0 #41b883,
-  -2em -1em 0 0 #41b883,
-  2em -1em 0 0 #41b883,
-  3em -1em 0 0 #41b883,
-  -4em 0 0 0 #41b883,
-  -3em 0 0 0 #41b883,
-  3em 0 0 0 #41b883,
-  4em 0 0 0 #41b883,
-  -5em 1em 0 0 #41b883,
-  -4em 1em 0 0 #41b883,
-  4em 1em 0 0 #41b883,
-  5em 1em 0 0 #41b883,
-  -5em 2em 0 0 #41b883,
-  5em 2em 0 0 #41b883,
-  -3em 3em 0 0 #41b883,
-  3em 3em 0 0 #41b883,
-  5em 3em 0 0 #41b883,
-  -2em 4em 0 0 #41b883,
-  -1em 4em 0 0 #41b883,
-  1em 4em 0 0 #41b883,
-  2em 4em 0 0 #41b883;
-  background: #41b883;
-  width: 1em;
-  height: 1em;
-  overflow: hidden;
-  margin: 50px 0 70px 65px;
-}
 
 
 

@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../App.css";
-import Aos from "aos";
+
 import "aos/dist/aos.css";
 
 const InfoCard = props => {
@@ -21,7 +21,7 @@ const [showImage, setShowImge] = React.useState("noInfoCardType")
           alt={props.alt}
         />
         <img className={`${showImage}`} style={{  position: "absolute", width: "18rem",
-    height: "60vh", borderRadius: "10px "}} src={props.initialImg}/>
+    height: "60vh", borderRadius: "10px ", }} src={props.initialImg} alt=""/>
 
         <h4 className={`${showImage}`} style={{color:"white", zIndex:2, width:'20rem', position:'relative', top:'.8rem'}}>{props.cardTitle}</h4>
 
@@ -34,11 +34,7 @@ const [showImage, setShowImge] = React.useState("noInfoCardType")
 };
 
 const styles = {
-  cardContainer: {
-    display: "flex",
-    flexDirection: "row",
-    flexWrap: "wrap"
-  },
+
   cardStyle: {
     display: "flex",
     flexDirection: "column",

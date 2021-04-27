@@ -16,17 +16,13 @@ import Office from "../assets/images/office.jpg";
 import PopUp from "../components/PopUp";
 import SVG1 from "../assets/images/pixeltrue-support.svg";
 import SVG2 from "../assets/images/laptop.svg";
-import aos from 'aos';
 import IntroTestimonials from "../components/IntroTestimonials";
 import "aos/dist/aos.css";
+import Skills from "../components/Skills";
 
 const Home = () => {
 
   const [onPopUp, setOnPopUp] = React.useState("popUpContainer")
-  // allow set interval to take array index as parameter to iterate
-  
-
-  
 
   return (
     <div
@@ -40,16 +36,27 @@ const Home = () => {
     >
       
       <div style={styles.mainContainer}>
-        <img
-          style={styles.headerImage}
-          src={HeaderImage}
-          alt={"header picture"}
-        />
+    
+        <div style={{
+          width: '18rem',
+          height: '18rem',
+          marginTop:'2rem',
+          borderRadius:'10rem',
+          backgroundColor: '#838383',
+          zIndex: 1,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'base-line',
+          padding:'0'
+        }}>
+          <p style={{ color:'white',margin:40, padding:0, width:'inherit'}}>Being a <div style={{color:'#41b883'}}>UX Designer</div> & language agnostic <div style={{color:'#41b883'}}>Coder</div> allows me to deliver powerful products & applications using the right mix of modern technologies.  </p>
+
+        </div>
      
         <IntroTestimonials /> 
         
-        <img  data-aos="fade" style={{ width: '35rem', height: '40rem', position: 'absolute', }} src={SVG1} />
-        <img  data-aos="fade" style={{width:'35rem', height:'40rem', position:'absolute', left:'14em'}}src={SVG2}/>
+        <img  data-aos="fade" style={{ width: '35rem', height: '40rem', position: 'absolute', }} src={SVG1} alt="" />
+        <img  data-aos="fade" style={{width:'35rem', height:'40rem', position:'absolute', left:'14em'}}src={SVG2} alt=""/>
 
         
        
@@ -76,7 +83,7 @@ const Home = () => {
           coverSrc={Coder}
           cardTitle={"Who I Am"}
           cardSummary={
-            "Being a self taught language agnostic coder allows me to deliver powerful products & applications using the right mix of front and back-end technologies."
+            "Being a UX Designer & language agnostic coder allows me to deliver powerful products & applications using the right mix of modern technologies."
           }
         />
 
@@ -89,7 +96,7 @@ const Home = () => {
           }
         />
       </div>
-      <div id={'work'}
+      <div id={"work"}
         style={{
           display: "flex",
           flexDirection: "row",
@@ -98,7 +105,7 @@ const Home = () => {
         }}
       >
         <a href="https://xenodochial-meitner-1d895a.netlify.app/">
-          <div className={"zoomOut"}>
+          <div style={{ margin:'4rem 6rem'}} className={"zoomOut"}>
             <h3
               style={{
                 position: "absolute",
@@ -135,7 +142,8 @@ const Home = () => {
                 color: "white",
                 top: 40,
                 left: "2rem",
-                textAlign: "left"
+                textAlign: "left",
+               
               }}
               className={"someH3"}
             >
@@ -160,19 +168,8 @@ const Home = () => {
           </div>
         </a>
       </div>
-<h1 style={{margin:'4rem 0rem 0rem 0rem'}}>Technologies</h1>
-      <div style={styles.cardContainer}>
-        <TechnologiesCards src={ReactLogo} />
-        <TechnologiesCards src={Node} />
-        <TechnologiesCards src={Wix} />
-        <TechnologiesCards src={WordPress} />
-      
-      
-        <TechnologiesCards src={FirebaseLogo} />
-        <TechnologiesCards src={Mongo} />
-        
-      </div>
 
+<Skills/>
       <Form />
     </div>
   );

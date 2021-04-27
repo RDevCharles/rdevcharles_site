@@ -141,7 +141,6 @@ const styles = {
     top: 10
   },
   button: {
-    borderStyle: "solid",
     borderWidth: "1px",
     borderColor: "#D3D3D3",
     borderStyle: "solid",
