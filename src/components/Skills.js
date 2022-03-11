@@ -8,15 +8,15 @@ const Skills = () => {
             flexDirection: 'row',
             justifyContent: 'center',
             alignItems:'base-line',
-            margin: '10rem 0rem 4rem 0rem',
+            margin: '10rem 0rem 2rem 0rem',
             flexWrap:'wrap'
         }}>
             <ul>
                 <h4>Skills</h4>
                 <li>Front-end Developement</li>
+                <li>Back-end Developement</li>
+                <li>Web Scrapping</li>
                 <li>Prototyping</li>
-                <li>Photography</li>
-                <li>Video Editing</li>
             </ul>
 
             <ul>
@@ -25,16 +25,15 @@ const Skills = () => {
                 <li>Sketch</li>
                 <li>Inkscape</li>
                 <li>Lightroom</li>
-                <li>FinalCut</li>
-                <li>Davinci Resolve</li>
             </ul>
 
             <ul>
                 <h4>Languages</h4>
-                <li>Html/CSS</li>
                 <li>Javascript (React Js)</li>
-                <li>Headless Cms</li>
+                <li>Node</li>
                 <li>Python</li>
+                <li>Html/CSS</li>
+                <li>Headless Cms</li>
             </ul>
     </div>
 )

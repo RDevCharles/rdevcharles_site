@@ -4,6 +4,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+a{
+  text-decoration: none;
+  list-style: none;
+}
+
 a:hover {
   color: rgb(0, 0, 0);
 } 
@@ -49,13 +54,6 @@ opacity: 1;
 transition: ease 0.3s;
 }
 
-
-
-
-#about{
-  background-color:whitesmoke;
-}
-
 #work:hover{
   background-position: center;
   background-size: cover;
@@ -73,7 +71,6 @@ transition: ease 0.3s;
   color: white;
   background-size: cover;
 }
-
 
 
 .fadeImg {
@@ -106,48 +103,6 @@ transition: ease 0.3s;
  background-repeat: 'no-repeat';
  background-attachment: 'scroll';
  background-size: '70% auto';
-}
-.zoomOut {
-  width: 40rem; 
-  height: 30rem;
-  overflow: hidden;
-  position: relative;
-  background-color: black;
-}
-
-.zoomIn {
-  width: auto;
-  height: 100%;
-  background-image: url("./assets/images/studio-pic.jpg");
-  background-position: center;
-  background-size: cover;
-  transition: transform ease 0.3s;
-  opacity: .4;
- 
-}
-.zoomIn:hover {
-  transform: scale(1.2);
-}
-
-.zoomOutB {
-  width: 40rem; 
-  height: 30rem;
-  overflow: hidden;
-  position: relative;
-  background-color: black;
-}
-
-.zoomInB {
-  width: auto;
-  height: 100%;
-  background-image: url("./assets/images/blkbus.jpg");
-  background-position: center;
-  background-size: cover;
-  transition: transform ease 0.3s;
-  opacity: .4;
-}
-.zoomInB:hover {
-  transform: scale(1.2);
 }
 
 
@@ -191,7 +146,11 @@ justify-content: center;
   
 }
 
+.bgImg{
 
+  transition: ease-in-out 300ms;
+  
+}
 
 .bgImg:hover {
   opacity: 0.3;
@@ -229,7 +188,13 @@ opacity: 0.3;
 }
 
 
+#javascript_list{
+display: none;
+}
 
+#python_list2{
+  display:none;
+}
 
 
 

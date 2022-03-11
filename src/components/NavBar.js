@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import Nav from "react-bootstrap/Nav";
-import { NavDropdown, Navbar } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 
 const NavBar = () => {
   return (
@@ -42,20 +42,6 @@ const NavBar = () => {
             >
               <Nav.Link href="/work">Work</Nav.Link>
             </Link>
-            <NavDropdown title="Open Source" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="https://github.com/RDevCharles/VanillaJSOnlineSchool">
-                Online School
-              </NavDropdown.Item>
-              <NavDropdown.Item href="https://github.com/RDevCharles/blogApp">
-                Blogging Ios App
-              </NavDropdown.Item>
-              
-              <NavDropdown.Item href="https://github.com/RDevCharles/recording_studio_template">
-                Music Creator Website
-              </NavDropdown.Item>
-
-            </NavDropdown>
-
             <Link
               activeClass="active"
               to="contact"
