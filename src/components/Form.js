@@ -14,16 +14,7 @@ const Form = () => {
       id="contact"
       data-aos="fade-up"
       data-aos-duration="500"
-      style={{
-        marginTop: "4rem",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundSize: "cover",
-        backgroundColor: "#0f9b0f",
-        background: "linear-gradient(to right, #41b883, #0575e6)",
-        backgroundBlendMode: "multiply"
-      }}
+      style={styles.main}
     >
       <div className={"formTopType"} style={styles.formType}>
         <h3 style={{ fontSize: "2.5rem", marginBottom: "2rem" }}>
@@ -102,6 +93,17 @@ const Form = () => {
 };
 
 const styles = {
+  main:{
+    marginTop: "4rem",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundSize: "cover",
+    backgroundColor: "#0f9b0f",
+    background: "linear-gradient(to right, #41b883, #0575e6)",
+    backgroundBlendMode: "multiply"
+  },
+
   form: {
     display: "flex",
     flexDirection: "column",

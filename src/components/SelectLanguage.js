@@ -10,8 +10,51 @@ import A from "../assets/images/apex.png";
 const SelectLanguage = () => {
   const [iconsState, setIconState] = React.useState("block");
   const [pythonState, setPythonState] = React.useState("none");
-    const [javascriptState, setJavascriptState] = React.useState("none");
-    const [javascriptETCState, setJavascriptETCState] = React.useState("none");
+  const [javascriptState, setJavascriptState] = React.useState("none");
+  const [javascriptETCState, setJavascriptETCState] = React.useState("none");
+
+  const pythonList = [
+    {
+      title: "Liquidity Sniper Bot",
+      anchor: "https://github.com/RDevCharles/uni_bot/blob/main/uni.py",
+    },
+    {
+      title: "Crypto Sales Twitter Bot",
+      anchor:
+        "https://github.com/RDevCharles/discord-to-twitter-bot/blob/main/%40treasure_listings_bot.py",
+    },
+    {
+      title: "Alt Coin SOPR Tracker",
+      anchor: "https://github.com/RDevCharles/sopr_logic",
+    },
+  ];
+
+  const jsList = [
+    {
+      title: " Signin Landing Page",
+      anchor: "https://romantic-bassi-849735.netlify.app",
+      pic: T,
+      picAlt: "splash-page",
+    },
+    {
+      title: "Landing Page With Shopify Intergration",
+      anchor: "https://www.wen.money",
+      pic: W,
+      picAlt: "splash-page",
+    },
+    {
+      title: "Dynamic Signup Page",
+      anchor: "https://eloquent-curie-58f1a3.netlify.app/",
+      pic: TA,
+      picAlt: "landing-page",
+    },
+    {
+      title: "Website With Metamask *fuji testnet*",
+      anchor: "https://dreamy-kalam-bc4d3b.netlify.app/",
+      pic: A,
+      picAlt: "metamask-page",
+    },
+  ];
 
   const selectStyles = {
     main: {
@@ -51,51 +94,50 @@ const SelectLanguage = () => {
     },
     image: {
       width: "12rem",
-      },
-    
-      back_button: {
-          height: "2rem",
-          margin: "1.5rem 0rem",
-          cursor: "pointer",
-          
-      },
-      
-      list_container: {
-          display: 'flex',
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-      },
+    },
 
-      javascript_main_list: {
-        display: 'flex',
-          flexDirection: "column",
-          justifyContent: "center",
-        alignItems: "center",
-      },
-      js_etc_btn: {
-          display: javascriptETCState,
-          width: "2rem",
-          margin: "1.5rem 0rem",
-          cursor: "pointer",
-      },
-      js_etc_header: {
-          display: javascriptETCState,
-          marginTop:'2rem'
-       
-      },
-      projects_header: {
-          martinTop:'2rem'
-      }
+    back_button: {
+      height: "2rem",
+      margin: "1.5rem 0rem",
+      cursor: "pointer",
+    },
+
+    list_container: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+
+    javascript_main_list: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    js_etc_btn: {
+      display: javascriptETCState,
+      width: "2rem",
+      margin: "1.5rem 0rem",
+      cursor: "pointer",
+    },
+    js_etc_header: {
+      display: javascriptETCState,
+      marginTop: "2rem",
+    },
+    projects_header: {
+      martinTop: "2rem",
+    },
   };
+
   return (
     <div id="work" style={selectStyles.main}>
       <div style={selectStyles.icons}>
         <a
           onClick={() => {
             setIconState("none");
-                      setJavascriptState("flex");
-                      setJavascriptETCState("flex");
+            setJavascriptState("flex");
+            setJavascriptETCState("flex");
           }}
         >
           <img src={JS} alt="javascript" />
@@ -117,77 +159,57 @@ const SelectLanguage = () => {
 
       <ul id="python_list2" style={selectStyles.python_list}>
         <h4 style={selectStyles.projects_header}>Projects</h4>
-        <li>
-          <a
-            style={selectStyles.text}
-            href="https://github.com/RDevCharles/uni_bot/blob/main/uni.py"
-          >
-            Liquidity Sniper Bot
-          </a>
-        </li>
-        <li>
-          <a
-            style={selectStyles.text}
-            href="https://github.com/RDevCharles/discord-to-twitter-bot/blob/main/%40treasure_listings_bot.py"
-          >
-            Crypto Sales Twitter Bot
-          </a>
-        </li>
-        <li>
-          <a
-            style={selectStyles.text}
-            href="https://github.com/RDevCharles/sopr_logic"
-          >
-            Alt Coin SOPR Tracker
-          </a>
+
+        {pythonList.map((item) => {
+          return (
+            <li>
+              <a style={selectStyles.text} href={item.anchor}>
+                {item.title}
+              </a>
+            </li>
+          );
+        })}
+
+        <img
+          onClick={() => {
+            setIconState("block");
+            setPythonState("none");
+            setJavascriptETCState("none");
+          }}
+          src={B}
+          style={selectStyles.back_button}
+          alt="back"
+        />
+      </ul>
+      <div style={selectStyles.javascript_main_list}>
+        <h4 style={selectStyles.js_etc_header}>Projects</h4>
+        <ul id="javascript_list" style={selectStyles.javascript_list}>
+          {jsList.map((item) => {
+            return (
+              <li style={selectStyles.list_container}>
+                <img
+                  style={selectStyles.image}
+                  src={item.pic}
+                  alt={item.picAlt}
+                />
+                <a style={selectStyles.text} href={item.anchor}>
+                  {item.title}
+                </a>
               </li>
-              <img
-                onClick={() => {
-                    setIconState('block');
-                      setPythonState('none');
-                      setJavascriptETCState("none");
-              }}
-                  src={B} style={selectStyles.back_button} alt="back" />
-          </ul>
-          <div style={selectStyles.javascript_main_list}>
-      <h4 style={selectStyles.js_etc_header}>Projects</h4>
-      <ul id="javascript_list" style={selectStyles.javascript_list}>
-        
-              <li style={selectStyles.list_container}>
-                  <img style={selectStyles.image} src={T} alt="splash-page"/>
-          <a style={selectStyles.text} href="https://romantic-bassi-849735.netlify.app/">
-            Signin Landing Page
-          </a>
-        </li>
-                  <li style={selectStyles.list_container}>
-                      
-              <img style={selectStyles.image} src={W} alt="splash-page"/>
-          <a style={selectStyles.text} href="https://www.wen.money/">
-            Landing Page With Shopify Intergration
-          </a>
-        </li>
-              <li style={selectStyles.list_container}>
-              <img style={selectStyles.image} src={TA} alt="landing-page"/>
-          <a style={selectStyles.text} href="https://eloquent-curie-58f1a3.netlify.app/">
-            Dynamic Signup Page
-          </a>
-        </li>
-              <li style={selectStyles.list_container}>
-              <img style={selectStyles.image} src={A} alt="metamask-page"/>
-          <a style={selectStyles.text} href="https://dreamy-kalam-bc4d3b.netlify.app/">
-            Website With Metamask *fuji testnet*
-          </a>
-              </li>
-              
-              </ul>
-              <img
-                  onClick={() => {
-                      setIconState('block');
-                      setJavascriptState('none');
-                      setJavascriptETCState("none");
-                }}
-                  style={selectStyles.js_etc_btn} src={B} alt="back" />
-              </div>
+            );
+          })}
+        </ul>
+        <img
+          onClick={() => {
+            setIconState("block");
+            setJavascriptState("none");
+            setJavascriptETCState("none");
+          }}
+          style={selectStyles.js_etc_btn}
+          src={B}
+          alt="back"
+        />
+      </div>
     </div>
   );
 };

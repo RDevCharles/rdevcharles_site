@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-scroll";
-import Nav from "react-bootstrap/Nav";
 import { Navbar } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
 
 const NavBar = () => {
+  const navLinks = [
+    { name: "about", title: "About" },
+    { name: "work", title: "Work" },
+    { name: "contact", title: "Contact" },
+  ];
   return (
     <>
       <Navbar
@@ -22,36 +27,20 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav>
-          <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <Nav.Link href="/about">About</Nav.Link>
-            </Link>
-            <Link
-              activeClass="active"
-              to="work"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <Nav.Link href="/work">Work</Nav.Link>
-            </Link>
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <Nav.Link href="#deets">Contact</Nav.Link>
-            </Link>
+            {navLinks.map((item) => {
+              return (
+                <Link
+                  activeClass="active"
+                  to={item.name}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <Nav.Link href="#">{item.title}</Nav.Link>
+                </Link>
+              );
+            })}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -62,10 +51,9 @@ const NavBar = () => {
 const navStyles = {
   nav: {
     width: "100vw",
-
     backgroundColor: "black",
-    boxShadow: "0px 0px 10px black"
-  }
+    boxShadow: "0px 0px 10px black",
+  },
 };
 
 export default NavBar;
